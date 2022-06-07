@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "働く",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "text": "寝る",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "text": "起きる",
+      "categoryId": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "やること"
+    },
+    {
+      "id": 2,
+      "title": "やったこと"
+    }
+  ]
+}
