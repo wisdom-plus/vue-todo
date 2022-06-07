@@ -1,4 +1,4 @@
-export const fetchItems = async (url) => {
+const fetchItems = async (url) => {
   try {
     const response = await fetch(url);
     return await response.json();
@@ -7,3 +7,5 @@ export const fetchItems = async (url) => {
     console.error(error);
   }
 };
+
+export default fetchItems;
