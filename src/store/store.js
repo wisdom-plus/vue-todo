@@ -1,11 +1,11 @@
 import { createStore } from "vuex";
-import fetchItems from "../../utils/http";
+import fetchItems from "../../utils/http.js";
 
 export default createStore({
   state() {
     return {
       categoryList: [],
-      cardlist: [],
+      cardList: [],
     };
   },
   mutations: {
@@ -13,7 +13,7 @@ export default createStore({
       state.categoryList = categoryList;
     },
     setCardList(state, cardList) {
-      state.cardlist = cardList;
+      state.cardList = cardList;
     },
   },
   actions: {
@@ -22,7 +22,7 @@ export default createStore({
       context.commit("setCategoryList", categoryList);
     },
     async fetchCardList(context) {
-      const cardList = await fetchItems("http://localhost:3000/cards");
+      const cardList = await fetchItems("http://localhost:3000/todos");
       context.commit("setCardList", cardList);
     },
   },
